@@ -484,6 +484,14 @@ textarea {
 
 /*END ANIMATIONS*/
 
+@keyframes fallAnimation {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
 /*SOCIAL ICONS*/
 .top-left-image {
@@ -491,6 +499,7 @@ textarea {
     top: 0;
     left: 25px;
     transition: top 0.3s ease;
+    animation: fallAnimation 2s ease;
 }
 
 .icons {
