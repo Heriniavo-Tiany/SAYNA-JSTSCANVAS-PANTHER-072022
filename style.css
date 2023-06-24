@@ -1,0 +1,605 @@
+:root {
+    --white: #FFFFFF;
+    --light-pink: #F2CEF2;
+    --pink: #DF99F2;
+    --lavender: #9E91B7;
+    --purple: #3D2DA6;
+    --blue: #07338C;
+    --dark-blue: #021740;
+}
+
+.white {
+    color: var(--white);
+}
+
+.light-pink {
+    color: var(--light-pink);
+}
+
+.pink {
+    color: var(--pink);
+}
+
+.lavender {
+    color: var(--lavender);
+}
+
+.purple {
+    color: var(--purple);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.dark-blue {
+    color: var(--dark-blue);
+}
+
+
+@font-face {
+    font-family: Panthera;
+    src: url('./fonts/panthera.otf') format('opentype');
+}
+
+@font-face {
+    font-family: BEYNO;
+    src: url('./fonts/BEYNO.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Cantarell;
+    src: url('./fonts/Cantarell.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: WakandaForever;
+    src: url('./fonts/WakandaForever-Regular.ttf') format('truetype');
+}
+
+.panthera {
+    font-family: Panthera, Arial, sans-serif;
+}
+
+.beyno {
+    font-family: BEYNO, Arial, sans-serif;
+}
+
+.cantarell {
+    font-family: Cantarell, Arial, sans-serif;
+}
+
+.wakanda {
+    font-family: WakandaForever, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #010101, #263654);
+    padding: 25px 10px;
+}
+
+/* Logos styles */
+.logos {
+    display: flex;
+    margin-left: 100px;
+}
+
+
+/* Navigation links styles */
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.nav-links .inactive {
+    margin-right: 50px;
+    text-decoration: none;
+    color: #FFF;
+    position: relative;
+}
+
+.nav-links .inactive::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-links .inactive:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-links .active {
+    margin-right: 50px;
+    text-decoration: underline;
+    color: var(--lavender);
+    position: relative;
+}
+
+
+/*END NAVBAR*/
+
+/*HERO SECTION*/
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: 500px;
+}
+
+.main-content {
+    background-image: url('./assets/Wakanda/Pantherwakanda1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/*END HERO SECTION*/
+
+/*CONTENT*/
+/*.WKcontainer {*/
+/*    background-image: url('./assets/Wakanda/Pantherwakanda2.png');*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    padding: 20px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: 400px;*/
+/*}*/
+
+.WKcontainer {
+    margin: 0 50px;
+    padding-bottom: 100px;
+}
+
+.contentSection {
+    background: linear-gradient(to right, #010101, #263654);
+}
+
+.text-columns {
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+}
+
+@media (max-width: 800px) {
+    .text-columns {
+        flex-direction: column; /* Stack columns vertically */
+        gap: 20px; /* Adjust the gap between columns */
+        justify-content: center; /* Center columns vertically */
+        align-items: center; /* Center columns horizontally */
+    }
+
+    .column {
+        flex: none; /* Remove flex grow to allow columns to wrap */
+        width: 100%; /* Set column width to 100% */
+    }
+}
+
+.column h2 {
+    margin-top: 100px;
+}
+
+.column p {
+    text-align: justify;
+}
+
+/*END CONTENT*/
+
+/*FOOTER*/
+.footer {
+    background-image: url('./assets/All/back_footer.png');
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 370px;
+}
+
+.footerCol {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+.column {
+    flex: 1;
+}
+
+.center-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-images img {
+    margin-bottom: -215px; /* Adjust the value to create overlap */
+    transition: transform 0.3s ease;
+}
+
+.center-images:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+    .footerImg {
+        display: none;
+    }
+}
+
+/* END FOOTER*/
+
+/*--------------ENIGMES--------------------*/
+/*HERO*/
+.right {
+    float: right; /* Float on the right side */
+    width: 50%; /* Adjust width as needed */
+
+}
+
+.main-contentEnigme {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    padding: 50px;
+    box-sizing: border-box;
+
+    background-image: url('./assets/Enigme/Pantherenigme1.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.enigmeHero {
+    background: linear-gradient(to right, #010101, #263654);
+    overflow: hidden;
+}
+
+.textEnigme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textEnigme img {
+    margin-bottom: -333px; /* Adjust the value to create overlap */
+}
+
+.line {
+    margin-top: 100px;
+}
+
+/*ENDHERO*/
+
+
+/*CONTENT*/
+.enigmeHero h2 {
+    padding: 100px 0;
+    margin: 0 100px;
+}
+
+.transcript {
+    margin: 0 100px;
+}
+
+.emphase {
+    max-width: 432px;
+}
+
+.enigmeHero form {
+    margin-top: 100px;
+}
+
+#reponse {
+    margin: 20px 100px;
+    width: 520px;
+    height: 56px;
+    border-radius: 38px;
+    background-color: transparent;
+    color: #FFFFFF;
+    padding-left: 50px;
+}
+
+#submit {
+    width: 174px;
+    height: 54px;
+    border-radius: 38px;
+    border-color: var(--light-pink);
+    background-color: var(--light-pink);
+    margin: 20px 260px 100px;
+
+}
+
+#submit:hover {
+    box-shadow: #F2CEF2 2px 2px 4px;
+}
+
+/*END CONTENT*/
+
+/*PERSO*/
+.persos {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--dark-blue);
+    height: 230px;
+
+}
+
+.contentPerso {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contentPerso img {
+    width: 200px;
+    height: 230px;
+}
+
+.text {
+    margin: 0px 20px;
+    text-align: justify;
+
+}
+
+/*END PERSO*/
+
+
+/*PROFIL*/
+.profile {
+    background-color: #FFFFFF;
+    border-radius: 38px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.profile h2 {
+    text-align: center;
+}
+
+.profile button {
+    background-color: var(--purple);
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    min-width: 92px;
+}
+
+.btns {
+    text-align: center;
+}
+
+.profile span {
+    font-weight: bold;
+}
+
+.profile p {
+    font-family: Cantarell, Arial, sans-serif;
+}
+
+
+.containerProfile {
+    position: relative;
+}
+
+.profile {
+    background-color: #FFFFFF;
+    border-radius: 38px;
+    padding: 20px;
+    max-width: 400px;
+    position: relative;
+    z-index: 2;
+    margin-top: 337px;
+}
+
+.overlay-image {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: 1;
+    width: 300px;
+    top: -255px;
+    left: 76px;
+}
+
+/*END PROFIL*/
+
+/*CONTACT*/
+.contact {
+    background-image: url('./assets/Accueil/Pantherhome7.png');
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.contact form {
+    padding: 20px 60px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    width: fit-content;
+    border-radius: 134px;
+}
+
+.contact input {
+    width: 520px;
+    height: 56px;
+    border-radius: 38px;
+    padding-left: 10px;
+}
+
+textarea {
+    padding: 10px;
+    width: 520px;
+    border-radius: 10px;
+}
+
+#envoyer {
+    width: 174px;
+    height: 54px;
+    border-radius: 38px;
+    border-color: var(--light-pink);
+    background-color: var(--light-pink);
+    margin: 20px 260px 0;
+
+}
+
+#envoyer:hover {
+    box-shadow: #021740 2px 2px 4px;
+}
+
+/*END CONTACT*/
+
+
+
+/*ANIMATIONS*/
+.active {
+    color: var(--lavender);
+}
+
+/*END ANIMATIONS*/
+
+
+/*SOCIAL ICONS*/
+.top-left-image {
+    position: absolute;
+    top: 0;
+    left: 25px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 170px;
+    left: 34px;
+    gap: 10px;
+}
+
+#facebook:hover {
+    content: url("./assets/All/icon_facebook_white.png");
+    transition: filter 0.3s ease;
+}
+
+#insta:hover {
+    content: url("./assets/All/icon_instagram_white.png");
+    transition: filter 0.3s ease;
+}
+
+#tiktok:hover {
+    content: url("./assets/All/icon_tiktok_white.png");
+    transition: filter 0.3s ease;
+}
+
+#twitter:hover {
+    content: url("./assets/All/icon_twitter_white.png");
+    transition: filter 0.3s ease;
+}
+
+.logos img:hover {
+    content: url("./assets/All/footer2_hover.png");
+    transition: filter 0.3s ease;
+}
+/*END SOCIAL ICONS*/
+
+
+
+/*FADE IN*/
+body {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fadeSlideInLeft 0.5s ease forwards;
+}
+
+@keyframes fadeSlideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/*END FADE IN*/
+.footerLink {
+    margin-right: 50px;
+    text-decoration: none;
+    color: #FFF;
+    position: relative;
+}
+
+.footerLink::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+
+.footerLink:hover::after {
+    transform: scaleX(1);
+}
+
+/*POPUP*/
+
+.popup {
+    display: none;
+    position: fixed;
+    /*top: 200px;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    padding: 120px;
+    background: linear-gradient(to right, #010101, #263654);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    z-index: 9999;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/*END POPUP*/
