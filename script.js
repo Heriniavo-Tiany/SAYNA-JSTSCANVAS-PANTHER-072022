@@ -56,3 +56,23 @@ window.addEventListener('scroll', function() {
     iconsDiv.style.transition = 'top 0.3s ease';
     iconsDiv.style.top = (170 + scrollTop) + 'px';
 });
+
+
+// --------------- Fade in ---------------
+function handleScrollAnimation() {
+    const elements = document.querySelectorAll('.fade-in');
+
+    elements.forEach(function(element) {
+        const elementPosition = element.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+
+        if (elementPosition < screenHeight) {
+            element.classList.add('fade-in-active');
+        }
+    });
+}
+
+window.addEventListener('scroll', handleScrollAnimation);
+window.addEventListener('resize', handleScrollAnimation);
+window.addEventListener('load', handleScrollAnimation);
+
