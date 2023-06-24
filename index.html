@@ -11,10 +11,14 @@
 <div class="icons-container">
     <img class="top-left-image" src="./assets/Accueil/line.png" alt="Top Left Image">
     <div class="icons">
-        <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="./assets/All/icon_facebook.png" id="facebook" alt=""></a>
-        <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="./assets/All/icon_instagram.png" id="insta" alt=""></a>
-        <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="./assets/All/icon_twitter.png" id="twitter" alt=""></a>
-        <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="./assets/All/icon_tiktok.png" id="tiktok" alt=""></a>
+        <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img
+                src="./assets/All/icon_facebook.png" id="facebook" alt=""></a>
+        <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img
+                src="./assets/All/icon_instagram.png" id="insta" alt=""></a>
+        <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img
+                src="./assets/All/icon_twitter.png" id="twitter" alt=""></a>
+        <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img
+                src="./assets/All/icon_tiktok.png" id="tiktok" alt=""></a>
     </div>
 </div>
 
@@ -35,8 +39,10 @@
 <div class="main-contentEnigme enigmeHero">
 
     <div class="left">
-        <h1 class="panthera lavender">BLACK PANTHER</h1>
-        <h1 class="beyno lavender">WAKANDA FOREVER</h1>
+        <div class="title-zoom">
+            <h1 class="panthera lavender">BLACK PANTHER</h1>
+            <h1 class="beyno lavender">WAKANDA FOREVER</h1>
+        </div>
         <p class="cantarell white">
             En plus d'être un film qui fait la part belle aux héroïnes, Black Panther rend
             hommage aux cultures africaine et afro américaine. On y évoque le
@@ -274,16 +280,20 @@
             <div class="column">
                 <h2 class="white cantarell ">PAGES</h2>
                 <p class="white cantarell "><a class="footerLink" href="./index.html">A Propos</a></p>
-                <p class="white cantarell "><a  class="footerLink"  href="./wakanda.html">Wakanda</a></p>
+                <p class="white cantarell "><a class="footerLink" href="./wakanda.html">Wakanda</a></p>
             </div>
             <div class="column">
                 <h2 class="white cantarell ">RETROUVEZ-NOUS</h2>
 
                 <div class="image-row">
-                    <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">  <img src="./assets/All/footer3.png" alt="Image 1"></a>
-                    <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"> <img src="./assets/All/footer4.png" alt="Image 2"></a>
-                    <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"> <img src="./assets/All/footer5.png" alt="Image 3"></a>
-                    <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"> <img src="./assets/All/footer6.png" alt="Image 4"></a>
+                    <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                        <img src="./assets/All/footer3.png" alt="Image 1"></a>
+                    <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                        <img src="./assets/All/footer4.png" alt="Image 2"></a>
+                    <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                        <img src="./assets/All/footer5.png" alt="Image 3"></a>
+                    <a href="https://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                        <img src="./assets/All/footer6.png" alt="Image 4"></a>
                 </div>
             </div>
         </div>
@@ -299,14 +309,15 @@
     const myPopup = document.getElementById("myPopup");
     const closeBtn = myPopup.querySelector(".close-btn");
 
-    myButton.addEventListener("click", function(event) {
+    myButton.addEventListener("click", function (event) {
         event.preventDefault(); // prevent default behavior of button click
         myPopup.style.display = "block"; // display the popup
     });
 
-    closeBtn.addEventListener("click", function(event) {
+    closeBtn.addEventListener("click", function (event) {
         myPopup.style.display = "none";
     });
 </script>
+<script src="script.js"></script>
 </body>
 </html>
