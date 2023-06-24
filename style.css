@@ -630,3 +630,33 @@ body {
     opacity: 1;
     transform: translateX(0);
 }
+
+/*Pop up*/
+.popup2 {
+    display: none;
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 60px;
+    border-radius: 14px;
+    background: linear-gradient(var(--light-pink), var(--purple));
+    box-shadow: var(--purple) 0 0 1000px;
+}
+
+.popup2 h1, .popup2 p {
+    color: #FFFFFF;
+}
+
+.popup2 button {
+    width: 174px;
+    height: 54px;
+    border-radius: 38px;
+    border-color: var(--light-pink);
+    background-color: var(--light-pink);
+}
+
+.popup2-active {
+    display: block;
+}
