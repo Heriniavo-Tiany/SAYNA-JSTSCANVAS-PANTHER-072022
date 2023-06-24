@@ -36,7 +36,7 @@ const persos = [
     {
         img: 'Pantherhome_slider_6',
         name: 'W\'KABI',
-        description: "W'Kabi est l'ancien chef de la sécurité de la Tribu de la Porte du Wakanda ainsi que l'ancien meilleur ami de T'Challa. Ayant perdu la foi en son roi pour avoir échoué à capturer Ulysses Klaue, l'homme responsable de la mort de ses parents, W'Kabi apporta son soutien à Erik Killmonger et lui permit de prendre le trône du Wakanda."
+        description: "W'Kabi est l'ancien chef de la sécurité de la Tribu de la Porte du Wakanda ainsi que l'ancien meilleur ami de T'Challa. Ayant perdu la foi en son roi pour avoir échoué à capturer Ulysses Klaue, l'homme responsable de la mort de ses parents, W'Kabi apporta son soutien à Erik Killmonger et lui permit..."
     },
     {
         img: 'Pantherhome_slider_7',
@@ -51,12 +51,12 @@ const persos = [
     {
         img: 'Pantherhome_slider_9',
         name: 'EVERETT KENNETH ROSS',
-        description: "L'agent Everett Ross est un agent de la CIA et un ancien Commissaire Exécutif à l'Antiterrorisme pour la Force conjointe Anti-Terroriste. Après avoir quitté la force conjointe Anti-Terroriste, Ross fut chargé de traquer et neutraliser Ulysses Klaue, ce qui plaça Ross sur le chemin de Black Panther, qui cherchait à capturer de nouveau Klaue pour ses crimes passés."
+        description: "L'agent Everett Ross est un agent de la CIA et un ancien Commissaire Exécutif à l'Antiterrorisme pour la Force conjointe Anti-Terroriste. Après avoir quitté la force conjointe Anti-Terroriste, Ross fut chargé de traquer et neutraliser Ulysses Klaue, ce qui plaça Ross sur le..."
     },
     {
         img: 'Pantherhome_slider_10',
         name: 'ULYSSE KLAUE',
-        description: "Ullysses Klaue est un criminel international, gangster et vendeur d'armes sur le marché noir. En 1992, il collabora avec N'Gobu afin de voler une quantité importante de vibranium au Wakanda. Bien qu'il soit parvenu à voler et à s'echapper avec un stock important, il reçut une marque sur le cou de la part des Wakandais."
+        description: "Ullysses Klaue est un criminel international, gangster et vendeur d'armes sur le marché noir. En 1992, il collabora avec N'Gobu afin de voler une quantité importante de vibranium au Wakanda. Bien qu'il soit parvenu à voler et à s'echapper avec un stock important, il reçut une marque..."
     },
 ]
 

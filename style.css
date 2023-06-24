@@ -359,7 +359,7 @@ body {
     margin-bottom: 20px;
 }
 
-.contentPerso  img {
+.contentPerso img {
     width: 200px;
     height: 230px;
 }
@@ -476,7 +476,6 @@ textarea {
 /*END CONTACT*/
 
 
-
 /*ANIMATIONS*/
 .active {
     color: var(--lavender);
@@ -539,8 +538,8 @@ textarea {
     content: url("./assets/All/footer2_hover.png");
     transition: filter 0.3s ease;
 }
-/*END SOCIAL ICONS*/
 
+/*END SOCIAL ICONS*/
 
 
 /*FADE IN*/
@@ -616,6 +615,7 @@ body {
     border: none;
     cursor: pointer;
 }
+
 /*END POPUP*/
 
 
@@ -663,4 +663,20 @@ body {
 
 html {
     scroll-behavior: smooth;
+}
+
+.next-button {
+    position: absolute;
+    right: 5px;
+    top: 110px;
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--dark-blue);
+    box-shadow: 0 0 20px white;
+}
+
+.slider .slide:first-child img {
+    transform: scale(1.2);
 }
