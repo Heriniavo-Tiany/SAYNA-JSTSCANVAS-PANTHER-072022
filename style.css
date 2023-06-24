@@ -487,18 +487,20 @@ textarea {
 
 /*SOCIAL ICONS*/
 .top-left-image {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 25px;
+    transition: top 0.3s ease;
 }
 
 .icons {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 170px;
     left: 34px;
     gap: 10px;
+    transition: top 0.3s ease;
 }
 
 #facebook:hover {

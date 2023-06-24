@@ -41,3 +41,18 @@ imgElements.forEach(function (element) {
         element.style.transform = 'scale(1)';
     });
 });
+
+// -------- Fixed icons on scroll --------
+window.addEventListener('scroll', function() {
+    const image = document.querySelector('.top-left-image');
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    image.style.transition = 'top 0.3s ease';
+    image.style.top = scrollTop + 'px';
+});
+
+window.addEventListener('scroll', function() {
+    const iconsDiv = document.querySelector('.icons');
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    iconsDiv.style.transition = 'top 0.3s ease';
+    iconsDiv.style.top = (170 + scrollTop) + 'px';
+});
