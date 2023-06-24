@@ -660,3 +660,7 @@ body {
 .popup2-active {
     display: block;
 }
+
+html {
+    scroll-behavior: smooth;
+}
