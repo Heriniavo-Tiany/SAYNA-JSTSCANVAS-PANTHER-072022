@@ -700,3 +700,17 @@ html {
 #texteEnigme {
     max-width: 45%;
 }
+
+
+.containerEnigme {
+    display: flex;
+}
+
+.textEnigme, .divEnigme {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.divEnigme {
+    margin-top: 100px;
+}

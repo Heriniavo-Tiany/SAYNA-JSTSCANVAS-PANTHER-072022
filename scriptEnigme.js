@@ -45,10 +45,7 @@ const enigmes = [
     },
     {
         id: 2,
-        text: "Une anecdote intéressante est écrite juste en dessous mais elle est codée par un code\n" +
-            "césar également appelé code de chiffrement par décalage . L’alphabet a été décalé,\n" +
-            "trouve la clé de chiffrement qui te permettrait de retrouver les lettres et retranscris la\n" +
-            "phrase :",
+        text: "Une anecdote intéressante est écrite juste en dessous mais elle est codée par un code césar également appelé code de chiffrement par décalage . L’alphabet a été décalé, trouve la clé de chiffrement qui te permettrait de retrouver les lettres et retranscris la phrase :",
         question: "Tm nqtu lmjcbm i Wikstivl mv Kitqnwzvqm. Qt a'ioqb lm ti dqttm lwvb mab\n" +
             "wzqoqviqzm Zgiv Kwwotmz mb moitmumvb ti dqttm ycq i dc viqbzm tm\n" +
             "uwcdmumvb xwtqbqycm lma jtiks xivbpmza",
