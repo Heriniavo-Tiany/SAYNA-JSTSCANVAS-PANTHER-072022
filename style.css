@@ -293,7 +293,8 @@ body {
 }
 
 .line {
-    margin-top: 100px;
+    margin-top: -10px;
+    margin-left: -102px;
 }
 
 /*ENDHERO*/
@@ -311,6 +312,7 @@ body {
 
 .emphase {
     max-width: 432px;
+    font-size: 13px;
 }
 
 .enigmeHero form {
