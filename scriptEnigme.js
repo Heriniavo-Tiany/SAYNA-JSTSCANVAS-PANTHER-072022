@@ -10,19 +10,35 @@ const texteEnigme = document.getElementById("texteEnigme");
 const questionEnigme = document.getElementById("questionEnigme");
 const le_savais_tu = document.getElementById("le_savais_tu");
 const le_savais_tu_content = document.getElementById("le_savais_tu_content");
+const bonne_Reponse = document.getElementById("bonne_Reponse");
+const countdownParagraph = document.createElement('p');
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent form submission
 
+    // Last popup
+    if (actualQuestion === 2) {
+        bonne_Reponse.innerText = 'Coming soon!';
+        countdownParagraph.classList.add('cantarell', 'white');
+        bonne_Reponse.appendChild(countdownParagraph);
+        // Mise à jour initiale du compte à rebours
+        updateCountdown();
+
+// Mise à jour du compte à rebours toutes les secondes
+        setInterval(updateCountdown, 1000);
+    }
     // Display the popup
     popup.classList.add('popup2-active');
 });
 
-questionSuivanteBtn.addEventListener('click', function() {
+questionSuivanteBtn.addEventListener('click', function () {
+    if (actualQuestion === 2)
+        location.reload();
+
     // Hide the popup
     popup.classList.remove('popup2-active');
     actualQuestion++;
-    idSpan.innerText = (actualQuestion +1).toString();
+    idSpan.innerText = (actualQuestion + 1).toString();
     q1.remove();
     texteEnigme.innerText = enigmes[actualQuestion].text;
     questionEnigme.innerText = enigmes[actualQuestion].question;
@@ -60,3 +76,37 @@ const enigmes = [
         le_savais_tu: "Le philosophe Francis Bacon inventa en 1605 un alphabet bilitère, uniquement composé des deux lettres A et B. Cest en quelque sorte lancêtre du système binaire des ordinateurs actuels car toute lettre pouvait être construite avec un enchainement précis de ces deux lettres, tandis que le système binaire informatique utilise 0 et 1."
     }
 ]
+
+// TImer
+const countdownDate = new Date('2023-07-25');
+
+// Fonction pour calculer le temps restant jusqu'à la date de fin
+function calculateTimeRemaining() {
+    const now = new Date();
+    const difference = countdownDate - now;
+
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+    return {
+        days,
+        hours,
+        minutes,
+        seconds
+    };
+}
+
+// Fonction pour formater le temps restant sous forme de chaîne de caractères
+function formatTimeRemaining(time) {
+    const {days, hours, minutes, seconds} = time;
+
+    return `${days} jours, ${hours} heures, ${minutes} minutes, ${seconds} secondes`;
+}
+
+// Fonction pour mettre à jour le compte à rebours
+function updateCountdown() {
+    const timeRemaining = calculateTimeRemaining();
+    countdownParagraph.textContent = formatTimeRemaining(timeRemaining);
+}
