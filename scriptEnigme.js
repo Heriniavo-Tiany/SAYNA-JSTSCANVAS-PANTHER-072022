@@ -18,8 +18,13 @@ form.addEventListener('submit', function (event) {
 
     // Last popup
     if (actualQuestion === 2) {
+        const lineBreak = document.createElement('br');
         bonne_Reponse.innerText = 'Coming soon!';
         countdownParagraph.classList.add('cantarell', 'white');
+        const image = document.createElement('img');
+        image.src = './assets/Enigme/figma_logo.svg';
+        bonne_Reponse.appendChild(lineBreak);
+        bonne_Reponse.appendChild(image);
         bonne_Reponse.appendChild(countdownParagraph);
         // Mise à jour initiale du compte à rebours
         updateCountdown();
