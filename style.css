@@ -652,8 +652,12 @@ body {
     box-shadow: var(--purple) 0 0 1000px;
 }
 
-.popup2 h1, .popup2 p {
-    color: #FFFFFF;
+.popup2 h1 {
+    margin: 0;
+}
+
+.popup2 p {
+    padding: 15px 0;
 }
 
 .popup2 button {

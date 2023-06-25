@@ -8,6 +8,8 @@ const idSpan = document.getElementById("idQuestion");
 const q1 = document.getElementById("q1");
 const texteEnigme = document.getElementById("texteEnigme");
 const questionEnigme = document.getElementById("questionEnigme");
+const le_savais_tu = document.getElementById("le_savais_tu");
+const le_savais_tu_content = document.getElementById("le_savais_tu_content");
 
 form.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
@@ -20,10 +22,12 @@ questionSuivanteBtn.addEventListener('click', function() {
     // Hide the popup
     popup.classList.remove('popup2-active');
     actualQuestion++;
-    idSpan.innerText = actualQuestion.toString();
+    idSpan.innerText = (actualQuestion +1).toString();
     q1.remove();
     texteEnigme.innerText = enigmes[actualQuestion].text;
     questionEnigme.innerText = enigmes[actualQuestion].question;
+    le_savais_tu.innerText = "Le savais tu?";
+    le_savais_tu_content.innerText = enigmes[actualQuestion].le_savais_tu;
 });
 
 
@@ -48,10 +52,7 @@ const enigmes = [
         question: "Tm nqtu lmjcbm i Wikstivl mv Kitqnwzvqm. Qt a'ioqb lm ti dqttm lwvb mab\n" +
             "wzqoqviqzm Zgiv Kwwotmz mb moitmumvb ti dqttm ycq i dc viqbzm tm\n" +
             "uwcdmumvb xwtqbqycm lma jtiks xivbpmza",
-        le_savais_tu: "Plusieurs sources s’entendent pour dire que la lettre la plus utilisée en français\n" +
-            "est la lettre E. En pourcentage de fréquence, la lettre est utilisée à 14% dans une\n" +
-            "phrase. Et si tu regardais quel symbole revient le plus souvent pour en déduire\n" +
-            "son décalage dans l’alphabet ? "
+        le_savais_tu: "Plusieurs sources s’entendent pour dire que la lettre la plus utilisée en français est la lettre E. En pourcentage de fréquence, la lettre est utilisée à 14% dans une phrase. Et si tu regardais quel symbole revient le plus souvent pour en déduire son décalage dans l’alphabet ? "
     },
     {
         id: 3,
@@ -59,10 +60,6 @@ const enigmes = [
         question: "01001100 01000101 00100000 01010010 01001111 01001001\n" +
             "00100000 01001100 01001001 01001111 01001110 00001101\n" +
             "00001010",
-        le_savais_tu: "Le philosophe Francis Bacon inventa en 1605 un alphabet bilitère, uniquement\n" +
-            "composé des deux lettres A et B. Cest en quelque sorte lancêtre du système\n" +
-            "binaire des ordinateurs actuels car toute lettre pouvait être construite avec un\n" +
-            "enchainement précis de ces deux lettres, tandis que le système binaire\n" +
-            "informatique utilise 0 et 1."
+        le_savais_tu: "Le philosophe Francis Bacon inventa en 1605 un alphabet bilitère, uniquement composé des deux lettres A et B. Cest en quelque sorte lancêtre du système binaire des ordinateurs actuels car toute lettre pouvait être construite avec un enchainement précis de ces deux lettres, tandis que le système binaire informatique utilise 0 et 1."
     }
 ]
