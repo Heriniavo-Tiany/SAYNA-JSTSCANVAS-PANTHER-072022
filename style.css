@@ -302,9 +302,14 @@ body {
 
 /*CONTENT*/
 .enigmeHero h2 {
-    padding: 100px 0;
+    margin-left: 100px;
+}
+
+.enigmeHero p {
+    padding: 15px 0 0 0;
     margin: 0 100px;
 }
+
 
 .transcript {
     margin: 0 100px;
@@ -681,4 +686,13 @@ html {
 
 .slider .slide:first-child img {
     transform: scale(1.2);
+}
+
+/*ENIGME*/
+.numero-enigme {
+    text-decoration: underline;
+}
+
+#texteEnigme {
+    max-width: 45%;
 }
