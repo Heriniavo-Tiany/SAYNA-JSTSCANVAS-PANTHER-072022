@@ -120,3 +120,15 @@ function nextSlide() {
 }
 
 document.querySelector('.next-button').addEventListener('click', nextSlide);
+
+// Zoom on hover profile
+const profileDiv = document.querySelector('.profile');
+const image = profileDiv.querySelector('.overlay-image');
+
+profileDiv.addEventListener('mouseenter', () => {
+    image.style.transform = 'scale(1.2)';
+});
+
+profileDiv.addEventListener('mouseleave', () => {
+    image.style.transform = 'scale(1)';
+});
